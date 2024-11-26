@@ -16,3 +16,61 @@
 		@apply absolute rounded-r-full top-60 bg-softBlue;
 	}
 }
+
+.footer-icon:hover {
+	filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+		brightness(101%) contrast(96%);
+}
+
+.mobile {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
+}
+
+.mobile-top,
+.mobile-middle,
+.mobile-bottom {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 3px;
+	top: 0;
+	left: 0;
+	background: #000;
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.mobile-middle {
+	transform: translateY(7px);
+}
+
+.mobile-bottom {
+	transform: translateY(14px);
+	background: #000;
+}
+
+.open {
+	transform: rotate(90deg);
+	transform: translateY(0px);
+	position: fixed;
+	top: 50px;
+	right: 25px;
+}
+
+.open .mobile-top {
+	transform: rotate(45deg) translateY(6px) translateX(6px);
+	background-color: #fff;
+}
+
+.open .mobile-middle {
+	display: none;
+}
+
+.open .mobile-bottom {
+	transform: rotate(-45deg) translateY(6px) translateX(-6px);
+	background-color: #fff;
+}
