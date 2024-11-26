@@ -14,13 +14,13 @@ module.exports = {
                     grayishBlue: 'hsl(229, 8%, 60%)',
                     veryDarkBlue: 'hsl(229, 31%, 21%)',
                 },
-                fontFamily: {
+                    fontFamily: {
                     sans: ['Rubik', 'sans-serif'],
                 },
-                backgroundImage: () => ({
+                    backgroundImage: () => ({
                     dots: "url('../images/bg-dots.svg')",
                 }),
             },
         },
         plugins: [],
-  }
+    }
